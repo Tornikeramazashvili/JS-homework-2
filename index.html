@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Homework 2</title>
+</head>
+
+<body>
+    <script>
+
+        // 1.
+        let sumArray = [1, 2, 3, 4, 5];
+
+        let reducer = (previousValue, currentValue) => previousValue + currentValue;
+
+        console.log(sumArray.reduce(reducer))
+
+        // 2.
+        let secondArray = [
+            {
+                name: "Jeffrey",
+                age: 16,
+                address: "Miami"
+            },
+            {
+                name: "Jack",
+                age: 17,
+                address: "Hangzhou"
+            },
+            {
+                name: "Warren",
+                age: 18,
+                address: "Omaha"
+            },
+        ]
+
+        // 3.
+        console.log(`My name is ` + secondArray[0]["name"])
+        console.log(`My age is ` + secondArray[0]["age"])
+        console.log(`My address is ` + secondArray[0]["address"])
+
+        // 4.
+        if (secondArray[1]["age"] < 19) {
+            console.log("I am a teenager");
+        } else {
+            console.log(" I am an adult");
+        }
+
+    </script>
+</body>
+
+</html>
